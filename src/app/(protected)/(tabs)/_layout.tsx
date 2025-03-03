@@ -22,8 +22,8 @@ export default function TabLayout() {
       <Tabs.Screen
         name='index'
         options={{
-          headerTitle: 'Reddit',
           title: 'Home',
+          headerTitle: 'Reddit',
           headerTintColor: '#FF5700',
           tabBarIcon: ({ color }) => (
             <AntDesign name='home' size={24} color={color} />
@@ -46,6 +46,8 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => (
             <AntDesign name='plus' size={24} color={color} />
           ),
+          headerShown: false,
+          tabBarStyle: { display: 'none' },
         }}
       />
       <Tabs.Screen
